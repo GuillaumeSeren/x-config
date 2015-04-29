@@ -1,0 +1,20 @@
+
+!
+! Swap Caps_Lock and Escape
+!
+!xmodmap -e 'clear Lock' -e 'keycode 0x9 = Caps_Lock' -e 'keycode 0x42 = Escape'
+clear Lock
+! Caps_Lock -> Escape
+keycode 0x9 = Caps_Lock
+! Escape -> Caps_Lock
+keycode 0x42 = Escape
+! Move compose to print
+keycode 107 = Multi_key
+! Move print to home
+keycode 110 = Print
+! left and shift left for Home
+keycode 113 = Left Home
+! right and shift right for end
+keycode 114 = Right End
+! End is XF86ScreenSaver
+keycode 115 = XF86ScreenSaver
